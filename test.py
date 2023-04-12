@@ -29,7 +29,11 @@ def multiply(n):
     np.matmul(a, b)
     t1 = time.time()
     print("Multiply test: %fs"% (t1 - t0))
-
+"""
+Multiply test: 16.864949s
+Resize test: 22.085006s
+Dot product test: 4.206041s ,n=90
+"""
 
 multiply(10000)
 resize()
