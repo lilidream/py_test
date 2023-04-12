@@ -21,5 +21,16 @@ def resize():
     t1 = time.time()
     print("Resize test: %fs"% (t1 - t0))
 
+def multiply(n):
+    times = []
+    t0 = time.time()
+    a = np.random.rand(n, n)
+    b = np.random.rand(n, n)
+    np.matmul(a, b)
+    t1 = time.time()
+    print("Multiply test: %fs"% (t1 - t0))
+
+
+multiply(10000)
 resize()
 dot(90)
